@@ -1,0 +1,102 @@
+:root {
+  --midnight-navy: #2C3E50;
+  --sky-blue: #3498DB;
+  --light-gold: #F1C40F;
+  --soft-white: #ECF0F1;
+  --warm-gray: #95A5A6;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--soft-white);
+  color: var(--warm-gray);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--midnight-navy);
+  color: var(--soft-white);
+  padding: 1rem 2rem;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--soft-white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--light-gold);
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--soft-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.1); /* softened shadow with midnight navy tint */
+  color: var(--midnight-navy);
+}
+
+h1, h2, h3 {
+  color: var(--sky-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  color: var(--warm-gray);
+}
+
+button, .highlight {
+  background-color: var(--light-gold);
+  color: var(--midnight-navy);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover, .highlight:hover {
+  background-color: #d4af22; /* slightly darker gold on hover */
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--midnight-navy);
+  color: var(--soft-white);
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--light-gold);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--sky-blue);
+  text-decoration: underline;
+}
