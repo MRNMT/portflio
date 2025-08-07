@@ -99,8 +99,8 @@ button:hover {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #2C3E50; /* Midnight Navy */
-  color: #ECF0F1;            /* Soft White */
+  background-color: #2C3E50; 
+  color: #ECF0F1;           
   font-size: 0.9rem;
 }
 
