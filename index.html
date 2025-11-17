@@ -1,72 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio showcasing skills, projects, and contact information.">
-  <meta name="keywords" content="portfolio, web developer, projects, contact, skills">
-  <meta name="author" content="Your Name">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nelson Mafape Tshwarelo Madileng (MRNMT) - Software Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
-<body>
-  <main class="light-mode" id="top">
-
-  <!-- Navbar -->
+<body data-theme="dark">
   <header class="navbar">
-    <h2>My Portfolio</h2>
+    <div class="logo">MRNMT</div>
     <nav>
-  
-      <ul class="nav-links" id="navLinks">
+     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-         <li><a href="privacy.html">Privacy</a></li>
       </ul>
     </nav>
-    <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Showcasing my work and skills.</p>
-    </div>
-    <div class="hero-image">
-      <img src="hero.webp" alt="Portfolio Hero Image">
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="intro">Hello, I'm Nelson Mafape Tshwarelo Madileng (MRNMT)</p>
+        <h1 class="hero-title">Software Developer</h1>
+        <p class="hero-description">
+          Transforming pixelated, bite-sized components into seamless digital UI/UX.
+        </p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          <div class="social-icons">
+            <a href="https://github.com/MRNMT" target="_blank" aria-label="GitHub"
+              ><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.234 1.91 1.234 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.1.823 2.22 0 1.606-.015 2.896-.015 3.286 0 .32.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg></a>
+            <a href="https://linkedin.com/in/nelson-madileng-4b64a928b" target="_blank" aria-label="LinkedIn"
+              ><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7.5c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.6h-5V8z"
+                />
+              </svg></a>
 
-  <!-- Columns Section -->
-  <section class="columns">
-    <div class="column" id="about">
-      <h2>About Me</h2>
-      <p>Brief introduction and background.</p>
-    </div>
-    <div class="column" id="projects">
-      <h2>Projects</h2>
-      <p>Highlight key projects and achievements.</p>
-    </div>
-    <div class="column" id="skills">
+            <a href="https://wa.me/message/2YIUYPO7FQO2F1" target="_blank" aria-label="WhatsApp"
+              ><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.1.55 4.1 1.6 5.85L0 24l6.3-1.6A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 21.5c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-3.7 1 1-3.6-.3-.4A9.5 9.5 0 012.5 12c0-5.2 4.3-9.5 9.5-9.5 2.5 0 4.8 1 6.5 2.8a9.3 9.3 0 012.8 6.7c0 5.2-4.3 9.5-9.5 9.5z"
+                />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="hero.webp" alt="Nelson Mafape Tshwarelo Madileng (MRNMT)" />
+      </div>
+    </section>
+<!-- 
+    <section id="about" class="section">
+      <h2>About</h2>
+  <p>
+  I am a passionate software developer currently pursuing a Diploma in Computer Science at Tshwane University of Technology (TUT). I'm also part of the mLab Apprenticenship program, where I'm gaining practical experience in building scalable web applications and crafting seamless user experiences.
+</p> -->
+<!-- 
+
+    </section>
+
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <p>List of technical and soft skills.</p>
-    </div>
-  </section>
+      <ul>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Node.js / Express</li>
+        <li>Python / Django</li>
+        <li>SQL / PL/SQL </li>
+      </ul> -->
+    <!-- </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <a href="#top">Back to Top</a>
-        <a href="privacy.html">Privacy Policy</a> | 
-    <a href="contact.html">Contact Us</a>
-    <p>&copy; 2025 Portfolio. All rights reserved.</p>
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+     <p>
+  In 2022, I worked at NEC XON where I was involved in price tag installations and general  support tasks. This hands-on experience gave me exposure to real-world retail technology solutions and operational workflows. References: Joel Phatlane (078 389 3087) and Nico Botha (072 255 3393).
+</p> -->
 
-  </footer>
-
-  <script src="script.js"></script>
-</main>
+    <!-- </section> -->
+<!-- 
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>UI/UX Design</li>
+        <li>Consulting</li>
+        <li>Project Management</li>
+      </ul>
+    </section> -->
+  </main>
+<script src="script.js"></script>
 </body>
 </html>

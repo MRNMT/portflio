@@ -1,3 +1,28 @@
+:root {
+  /* CSS Variables for Dark Mode Support */
+  --background: #ECF0F1;
+  --text: #95A5A6;
+  --primary: #2C3E50;
+  --accent: #F1C40F;
+  --card-bg: #FFFFFF;
+  --hover-accent: #3498DB;
+  --footer-bg: #2C3E50;
+  --border-color: #E0E0E0;
+  --shadow-color: rgba(44, 62, 80, 0.1);
+}
+
+[data-theme="dark"] {
+  --background: #1a1a1a;
+  --text: #E0E0E0;
+  --primary: #34495E;
+  --accent: #F39C12;
+  --card-bg: #2C2C2C;
+  --hover-accent: #5DADE2;
+  --footer-bg: #1a1a1a;
+  --border-color: #404040;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
 .projects-section {
   padding: 2rem;
   max-width: 900px;
@@ -11,24 +36,31 @@
 }
 
 .project-card {
-  background-color: #FFFFFF; /* card background */
-  border-left: 5px solid #3498DB; /* sky blue accent */
+  background-color: var(--card-bg);
+  border-left: 5px solid var(--hover-accent);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.1);
+  box-shadow: 0 2px 6px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .project-card h2 a {
-  color: #2C3E50; /* Midnight Navy */
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .project-card h2 a:hover {
-  color: #F1C40F; /* Light Gold on hover */
+  color: var(--accent);
 }
 
 .project-card p {
   margin-top: 0.5rem;
-  color: #555;
+  color: var(--text);
+  line-height: 1.6;
 }

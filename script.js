@@ -1,11 +1,19 @@
+// Scroll animation for sections
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section');
 
-function toggleTheme() {
-  const main = document.querySelector('main');
-  main.classList.toggle('dark-mode');
-  main.classList.toggle('light-mode');
-}
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-function toggleMenu() {
-  const navLinks = document.getElementById('navLinks');
-  navLinks.classList.toggle('active');
-}
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});

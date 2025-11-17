@@ -2,50 +2,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
-  <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Nelson Mafape Tshwarelo Madileng (MRNMT)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body data-theme="dark">
   <header class="navbar">
-    <h2>My Portfolio</h2>
+  <div class="logo">MRNMT</div>
     <nav>
-      <ul class="nav-links" id="navLinks">
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-         <li><a href="privacy.html">Privacy</a></li>
       </ul>
     </nav>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
   </header>
 
   <main>
-    <section class="contact-info">
+    <section class="section" id="contact-info">
       <h2>Contact Information</h2>
       <p>A young youth living in South Africa</p>
-      <p><strong>Phone:</strong> +27 764 694 671</p>
-      <p><strong>Email:</strong> nelsonmadileng75@gmail.com</p>
+      <p><i class="fa fa-phone" style="font-size:24px;color:rgb(218, 208, 208);"></i>
++27 764 694 671</p>
+      <p><i class="fa fa-envelope" style="font-size:24px;color:rgb(218, 208, 208);"></i> nelsonmadileng57@gmail.com</p>
+      <p>
+  <a href="https://wa.me/message/2YIUYPO7FQO2F1" target="_blank">
+    <i class="fa fa-whatsapp" style="font-size:40px;color:green"></i>
+  </a>
+   <a href="https://wa.me/message/2YIUYPO7FQO2F1" target="_blank"> click me</a>
+</p>
+
     </section>
 
-    <section class="form-section">
+    <section class="section" id="get-in-touch">
       <h2>Get in Touch</h2>
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Subject">
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Subject" />
         <textarea placeholder="Message" required></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </section>
   </main>
-
-  <footer class="footer">
-    <a href="contact.html">Contact Us</a> |
-    <a href="privacy.html">Privacy Policy</a>
-    <p>&copy; 2025 Portfolio. All rights reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

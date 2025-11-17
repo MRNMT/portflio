@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experience - Nelson Mafape Tshwarelo Madileng (MRNMT)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body data-theme="dark">
+  <header class="navbar">
+    <div class="logo">K</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+  </header>
+
+  <main>
+    <section class="section" id="experience">
+      <h2>Professional Experience</h2>
+      
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>NEC XON</h3>
+              <span class="role">Technical Support Specialist</span>
+            </div>
+            <div class="duration">
+              <span class="year">2022</span>
+            </div>
+          </div>
+          
+          <div class="experience-content">
+            <p class="description">
+              Delivered comprehensive technical support for retail technology solutions at NEC XON, specializing in price tag installation and maintenance across enterprise environments. Gained hands-on experience with operational workflows and retail technology implementations.
+            </p>
+            
+            <div class="achievements">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>Led price tag installation projects with precision and efficiency across retail environments</li>
+                <li>Provided technical support for retail technology solutions and POS systems</li>
+                <li>Maintained operational excellence in fast-paced enterprise environments</li>
+                <li>Collaborated with cross-functional teams to ensure seamless technology deployments</li>
+                <li>Delivered comprehensive training and support to retail staff on new systems</li>
+              </ul>
+            </div>
+            
+            <div class="achievements">
+              <h4>Technical Skills Applied</h4>
+              <ul>
+                <li>Retail technology systems and POS solutions</li>
+                <li>Hardware installation and configuration</li>
+                <li>Technical troubleshooting and support</li>
+                <li>Customer service and training delivery</li>
+                <li>Project coordination and team collaboration</li>
+              </ul>
+            </div>
+            
+            <div class="references">
+              <h4>Professional References</h4>
+              <div class="reference-grid">
+                <div class="reference-item">
+                  <span class="name">Joel Phatlane</span>
+                  <span class="contact">078 389 3087</span>
+                </div>
+                <div class="reference-item">
+                  <span class="name">Nico Botha</span>
+                  <span class="contact">072 255 3393</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>CodeTribe Academy</h3>
+              <span class="role">Full-Stack Developer Trainee</span>
+            </div>
+            <div class="duration">
+              <span class="year">2023</span>
+            </div>
+          </div>
+          
+          <div class="experience-content">
+            <p class="description">
+              Completling intensive full-stack development training at CodeTribe Academy, focusing on modern web technologies and software development best practices. Gained hands-on experience with real-world projects and industry-standard tools.
+            </p>
+            
+            <div class="achievements">
+              <h4>Key Projects & Skills</h4>
+              <ul>
+                <li>Developed responsive web applications using HTML, CSS, and JavaScript</li>
+                <li>Built full-stack applications with React, Node.js, and MongoDB</li>
+                <li>Implemented RESTful APIs and database integration</li>
+                <li>Created responsive designs with modern CSS frameworks</li>
+                <li>Collaborated on team projects using Git and Agile methodologies</li>
+              </ul>
+            </div>
+            
+            <div class="achievements">
+              <h4>Technologies Mastered</h4>
+              <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js, Node.js, Express.js</li>
+                <li>MongoDB, Firebase, RESTful APIs</li>
+                <li>Git, GitHub, Agile Development</li>
+                <li>Responsive Design, UI/UX Principles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <style>
+    .experience-grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .experience-card {
+      background: var(--section-bg);
+      border: 1px solid rgba(100, 255, 218, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px var(--shadow-color);
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .company-info h3 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 700;
+    }
+
+    .role {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .duration {
+      background: rgba(100, 255, 218, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: 1px solid var(--accent);
+    }
+
+    .year {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .description {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .achievements h4,
+    .references h4 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .achievements ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements li {
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .achievements li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .reference-item {
+      background: rgba(100, 255, 218, 0.05);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(100, 255, 218, 0.2);
+    }
+
+    .reference-item .name {
+      display: block;
+      color: var(--text-primary);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .reference-item .contact {
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .reference-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+  
+  <script src="script.js"></script>
+</body>
+</html>
