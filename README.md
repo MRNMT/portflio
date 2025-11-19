@@ -1,55 +1,17 @@
-# Running Local Development Server for Portfolio
+# React + Vite
 
-This project includes a simple batch script to start a local HTTP server using Python.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Steps to Run the Server
+Currently, two official plugins are available:
 
-1. Make sure you have Python 3 installed on your system. You can download it from https://www.python.org/downloads/
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-2. Open the folder containing your portfolio project in File Explorer.
+## React Compiler
 
-3. Double-click the `start-server.bat` file to run it. This will open a command prompt window and start a local server on port 8000.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-4. Open your web browser and navigate to:
+## Expanding the ESLint configuration
 
-```
-http://localhost:8000
-```
-
-5. You should see your portfolio homepage. Use the navigation links to browse other pages.
-
-## Troubleshooting
-
-- If the server does not start, ensure Python 3 is installed and added to your system PATH.
-
-- If port 8000 is in use, you can modify `start-server.bat` to use a different port by changing the command:
-
-```
-python -m http.server 8000
-```
-
-to
-
-```
-python -m http.server <your-port-number>
-```
-
-## Alternative: Run Server Manually
-
-If you prefer, you can run the server manually:
-
-1. Open a command prompt or terminal.
-
-2. Navigate to your project directory.
-
-3. Run the command:
-
-```
-python -m http.server 8000
-```
-
-4. Open your browser at `http://localhost:8000`
-
----
-
-If you need further assistance, please ask!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# MRNMT_Portfolio
